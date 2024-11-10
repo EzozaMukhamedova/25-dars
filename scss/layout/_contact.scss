@@ -1,0 +1,54 @@
+.contact {
+  &__wrapper {
+    display: flex;
+    gap: 82px;
+
+    justify-content: center;
+  }
+
+  &__btn button {
+    width: 349px;
+    height: 109px;
+    display: flex;
+    align-items: center;
+
+    gap: 49px;
+    padding: 26px 40px;
+    border: none;
+
+    border-radius: 90px;
+    background-image: $BUTTON-BG;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+      background-color 0.3s ease;
+    border: none;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      background-image: $BUTTON-BG;
+      border: none;
+      cursor: pointer;
+    }
+
+    span {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29.26px;
+      align-items: center;
+      color: $TEXT-COLOR-WHITE;
+    }
+  }
+}
+
+@media (max-width: 571px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .contact {
+    &__wrapper {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+}
